@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header class="transparent">
       <q-toolbar>
         <q-btn
           flat
@@ -13,12 +13,33 @@
         </q-btn>
 
         <q-toolbar-title>
-          Quasar App
+          <!-- Quasar App -->
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>
+          <q-btn flat round icon="far fa-bell" size="sm">
+            <q-badge color="red" floating>4</q-badge>
+          </q-btn>
+        </div>
       </q-toolbar>
     </q-header>
+
+    <q-footer class="bg-white">
+      <q-toolbar class="text-center">
+          <div class="col">
+            <q-btn flat round color="primary" icon="fas fa-wallet" size="sm" />
+            <div class="text-primary text-caption">My Wallet</div>
+          </div>
+          <div class="col">
+            <q-btn flat round color="primary" icon="fas fa-heartbeat" size="sm" />
+            <div class="text-primary text-caption">Insight</div>
+          </div>
+          <div class="col">
+            <q-btn flat round color="primary" icon="fas fa-calculator" size="sm" />
+            <div class="text-primary text-caption">Tool</div>
+          </div>
+      </q-toolbar>
+    </q-footer>
 
     <q-drawer
       v-model="leftDrawerOpen"
@@ -75,7 +96,7 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <q-page-container class="page-container">
       <router-view />
     </q-page-container>
   </q-layout>
@@ -98,4 +119,7 @@ export default {
 </script>
 
 <style>
+.page-container {
+  background-color: #F2F3F8;
+}
 </style>

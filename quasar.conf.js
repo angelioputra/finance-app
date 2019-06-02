@@ -14,10 +14,10 @@ module.exports = function (ctx) {
 
     extras: [
       'roboto-font',
-      'material-icons' // optional, you are not bound to it
+      'material-icons', // optional, you are not bound to it
       // 'ionicons-v4',
       // 'mdi-v3',
-      // 'fontawesome-v5',
+      'fontawesome-v5'
       // 'eva-icons'
     ],
 
@@ -27,6 +27,7 @@ module.exports = function (ctx) {
       components: [
         'QLayout',
         'QHeader',
+        'QFooter',
         'QDrawer',
         'QPageContainer',
         'QPage',
@@ -37,7 +38,9 @@ module.exports = function (ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QImg',
+        'QBadge'
       ],
 
       directives: [
@@ -89,13 +92,13 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'Quasar App',
+        name: 'Finance App',
         // short_name: 'Quasar-PWA',
-        // description: 'Best PWA App in town!',
+        description: 'Best PWA App in town!',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
-        theme_color: '#027be3',
+        theme_color: '#7963f7',
         icons: [
           {
             'src': 'statics/icons/icon-128x128.png',
