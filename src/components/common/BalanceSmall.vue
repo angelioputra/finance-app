@@ -15,7 +15,7 @@ export default {
 
 <style>
 .balance--small {
-  background-color: rgb(112, 86, 227, 0.5);
+  background-color: rgb(112, 86, 227, 0.3);
   border-radius: 50px;
 }
 </style>

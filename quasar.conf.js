@@ -40,7 +40,10 @@ module.exports = function (ctx) {
         'QItemSection',
         'QItemLabel',
         'QImg',
-        'QBadge'
+        'QBadge',
+        'QCarousel',
+        'QCarouselControl',
+        'QCarouselSlide'
       ],
 
       directives: [
@@ -93,7 +96,7 @@ module.exports = function (ctx) {
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
         name: 'Finance App',
-        // short_name: 'Quasar-PWA',
+        short_name: 'Finance App',
         description: 'Best PWA App in town!',
         display: 'standalone',
         orientation: 'portrait',
