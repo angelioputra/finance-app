@@ -24,7 +24,7 @@
           />
         </div>
 
-        <q-toolbar-title class="text-center text-size-medium">
+        <q-toolbar-title class="text-center text-size-medium text-weight-medium">
           <!-- Quasar App -->
           {{$route.meta.title}}
         </q-toolbar-title>
