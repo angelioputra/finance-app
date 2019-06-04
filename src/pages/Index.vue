@@ -55,6 +55,7 @@
         infinite
         autoplay
         navigation
+        swipeable
       >
         <q-carousel-slide name="1" class="">
           <CardPromo />
