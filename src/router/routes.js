@@ -22,6 +22,16 @@ const routes = [
           backTo: 'home'
         },
         component: () => import('pages/MySaving.vue')
+      },
+      {
+        path: 'saving-account',
+        name: 'saving-account',
+        meta: {
+          title: 'Saving Account',
+          showBurgerMenu: true,
+          showNotification: true
+        },
+        component: () => import('pages/MySaving.vue')
       }
     ]
   }
