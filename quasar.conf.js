@@ -43,7 +43,9 @@ module.exports = function (ctx) {
         'QBadge',
         'QCarousel',
         'QCarouselControl',
-        'QCarouselSlide'
+        'QCarouselSlide',
+        'QLinearProgress',
+        'QChip'
       ],
 
       directives: [

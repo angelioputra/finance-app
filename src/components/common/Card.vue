@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-borders q-py-md q-px-sm text-center text-weight-medium shadow-24 card">
+  <div class="bg-white rounded-borders q-py-md q-px-sm text-center shadow-24 card">
     <div>
       <q-img
           :src="image"

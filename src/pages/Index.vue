@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="row q-pa-md background-purple">
-      <div class="">
+      <div>
         <q-img
           class="profile-picture"
           src="statics/img/profile.jpg"
@@ -9,12 +9,12 @@
           style="height: 75px; width: 75px"
       />
       </div>
-      <div class="q-ml-md q-z-1">
+      <div class="q-ml-md q-z-1 q-mb-lg">
         <div class="text-h6 text-white">Angelio Putra</div>
-        <div><BalanceSmall /></div>
+        <div @click="handleChangePage"><BalanceSmall /></div>
       </div>
     </div>
-    <div class="row q-pa-md q-mt-sm q-gutter-sm">
+    <div class="row q-pa-md q-gutter-sm">
       <div class="col q-z-1 ">
         <Card label="Send" image="statics/img/icons8-send-email-64.png" />
       </div>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="q-px-md row">
-      <div class="col text-h6 ">Promo</div>
+      <div class="col text-subtitle2">Promo</div>
       <div class="col float-right text-right">
         <q-btn flat round icon="fas fa-angle-right" size="sm"/>
       </div>
@@ -73,14 +73,8 @@
 .profile-picture{
   border-radius: 50%;
 }
-.background-purple{
-  background: linear-gradient(45deg, rgb(176, 126, 233) 0%, rgba(121,99,247,1) 70%);
-}
 .promo-container {
   overflow-x: scroll;
-}
-.q-carousel {
-  height: auto;
 }
 </style>
 
@@ -98,6 +92,11 @@ export default {
   data () {
     return {
       slide: '1'
+    }
+  },
+  methods: {
+    handleChangePage () {
+      this.$router.push({ name: 'my-saving' })
     }
   }
 }

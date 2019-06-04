@@ -2,22 +2,35 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          aria-label="Menu"
-        >
-          <q-icon name="menu" />
-        </q-btn>
+        <div class="col-1">
+          <q-btn
+            v-if="$route.meta.showBurgerMenu"
+            flat
+            dense
+            round
+            @click="leftDrawerOpen = !leftDrawerOpen"
+            aria-label="Menu"
+          >
+            <q-icon name="menu" />
+          </q-btn>
 
-        <q-toolbar-title>
+          <q-btn
+            v-if="$route.meta.showButtonBack"
+            @click="handleChangePage($route.meta.backTo)"
+            aria-label="Back"
+            flat
+            dense
+            icon="fas fa-angle-left"
+          />
+        </div>
+
+        <q-toolbar-title class="text-center text-size-medium">
           <!-- Quasar App -->
+          {{$route.meta.title}}
         </q-toolbar-title>
 
-        <div>
-          <q-btn flat round icon="far fa-bell" size="sm">
+        <div class="col-1">
+          <q-btn flat round icon="far fa-bell" size="sm" v-if="$route.meta.showNotification">
             <q-badge color="red" floating>4</q-badge>
           </q-btn>
         </div>
@@ -113,7 +126,10 @@ export default {
     }
   },
   methods: {
-    openURL
+    openURL,
+    handleChangePage (routeName) {
+      this.$router.push({ name: routeName })
+    }
   }
 }
 </script>
