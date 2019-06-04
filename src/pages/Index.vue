@@ -1,7 +1,6 @@
 <template>
   <q-page>
-    <div class="circle-background mobile-only"></div>
-    <div class="row q-pa-md">
+    <div class="row q-pa-md background-purple">
       <div class="">
         <q-img
           class="profile-picture"
@@ -74,15 +73,8 @@
 .profile-picture{
   border-radius: 50%;
 }
-.circle-background{
-  background-color: #7056E3;
+.background-purple{
   background: linear-gradient(45deg, rgb(176, 126, 233) 0%, rgba(121,99,247,1) 70%);
-  height: 250vw;
-  border-radius: 100%;
-  position: fixed;
-  top: -180vw;
-  left: -75vw;
-  width: 250vw;
 }
 .promo-container {
   overflow-x: scroll;
