@@ -76,6 +76,16 @@ const routes = [
           backTo: 'registration.step-2'
         },
         component: () => import('pages/RegistrationStep3.vue')
+      },
+      {
+        path: 'step-4',
+        name: 'registration.step-4',
+        meta: {
+          title: 'Step 4/4',
+          showToolbar: true,
+          backTo: 'registration.step-3'
+        },
+        component: () => import('pages/RegistrationStep4.vue')
       }
     ]
   }

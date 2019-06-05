@@ -52,7 +52,8 @@ module.exports = function (ctx) {
         'QSeparator',
         'QCircularProgress',
         'QAvatar',
-        'QInput'
+        'QInput',
+        'QDialog'
       ],
 
       directives: [
