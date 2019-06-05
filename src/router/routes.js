@@ -51,7 +51,7 @@ const routes = [
         path: 'step-1',
         name: 'registration.step-1',
         meta: {
-          title: 'Step 1/6',
+          title: 'Step 1/4',
           showToolbar: true,
           backTo: 'registration.onboard'
         },
@@ -61,11 +61,21 @@ const routes = [
         path: 'step-2',
         name: 'registration.step-2',
         meta: {
-          title: 'Step 2/6',
+          title: 'Step 2/4',
           showToolbar: true,
           backTo: 'registration.step-1'
         },
         component: () => import('pages/RegistrationStep2.vue')
+      },
+      {
+        path: 'step-3',
+        name: 'registration.step-3',
+        meta: {
+          title: 'Step 3/4',
+          showToolbar: true,
+          backTo: 'registration.step-2'
+        },
+        component: () => import('pages/RegistrationStep3.vue')
       }
     ]
   }

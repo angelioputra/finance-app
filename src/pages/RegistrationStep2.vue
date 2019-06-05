@@ -4,10 +4,9 @@
     <div class="col">
       <div>
         <q-img
-          class="profile-picture"
           src="statics/img/login-3.png"
           spinner-color="white"
-          style="max-width: 150px; margin-top: 5vh"
+          style="max-width: 150px"
       />
       </div>
 
