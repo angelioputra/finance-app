@@ -17,7 +17,7 @@
     </div>
     <div class="">
       <q-btn class="q-my-md full-width" unelevated rounded no-caps color="primary" label="Create Account" @click="handleChangePage" />
-      <q-btn class="q-mb-md full-width" unelevated rounded no-caps outline label="Login" @click="handleLogiin" />
+      <q-btn class="q-mb-md full-width" unelevated rounded no-caps outline label="Login" @click="handleLogin" />
     </div>
   </q-page>
 </template>
