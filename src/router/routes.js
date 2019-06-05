@@ -34,6 +34,20 @@ const routes = [
         component: () => import('pages/SavingAccount.vue')
       }
     ]
+  },
+  {
+    path: '/registration',
+    component: () => import('layouts/LayoutBlank.vue'),
+    children: [
+      {
+        path: '',
+        name: 'registration.onboard',
+        meta: {
+
+        },
+        component: () => import('pages/RegistrationOnboard.vue')
+      }
+    ]
   }
 ]
 

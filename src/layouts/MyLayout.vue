@@ -61,6 +61,15 @@
     >
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
+        <q-item clickable tag="a" :to="{name: 'registration.onboard'}">
+          <q-item-section avatar>
+            <q-icon name="" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Logout</q-item-label>
+            <q-item-label caption></q-item-label>
+          </q-item-section>
+        </q-item>
         <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
           <q-item-section avatar>
             <q-icon name="school" />
@@ -136,6 +145,6 @@ export default {
 
 <style>
 .page-container {
-  background-color: #F2F3F8;
+  background-color: #F8F8FB;
 }
 </style>
