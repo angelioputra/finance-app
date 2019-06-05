@@ -19,7 +19,7 @@
     <div class="col q-mt-lg">
       <q-card flat class="my-card">
         <q-card-section>
-          <q-input outlined type="tel" prefix="(+62)" />
+          <q-input outlined type="tel" />
           <q-btn class="q-mt-md full-width" unelevated rounded no-caps color="primary" label="Continue" @click="handleChangePage" />
         </q-card-section>
       </q-card>
