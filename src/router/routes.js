@@ -46,6 +46,16 @@ const routes = [
 
         },
         component: () => import('pages/RegistrationOnboard.vue')
+      },
+      {
+        path: 'step-1',
+        name: 'registration.step-1',
+        meta: {
+          title: 'Step 1/6',
+          showToolbar: true,
+          backTo: 'registration.onboard'
+        },
+        component: () => import('pages/RegistrationStep1.vue')
       }
     ]
   }

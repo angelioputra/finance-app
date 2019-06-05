@@ -16,7 +16,7 @@
       <div class="q-mt-lg q-px-xl text-grey text-body">Never a better time than now to start thinking about how you manage all your finances with ease</div>
     </div>
     <div class="">
-      <q-btn class="q-my-md full-width" unelevated rounded no-caps color="primary" label="Create Account" />
+      <q-btn class="q-my-md full-width" unelevated rounded no-caps color="primary" label="Create Account" @click="handleChangePage" />
       <q-btn class="q-mb-md full-width" unelevated rounded no-caps outline label="Login" />
     </div>
   </q-page>
@@ -34,6 +34,12 @@ export default {
   data () {
     return {
 
+    }
+  },
+
+  methods: {
+    handleChangePage () {
+      this.$router.push({ name: 'registration.step-1' })
     }
   }
 }

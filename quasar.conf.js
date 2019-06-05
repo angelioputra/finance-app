@@ -51,7 +51,8 @@ module.exports = function (ctx) {
         'QCardActions',
         'QSeparator',
         'QCircularProgress',
-        'QAvatar'
+        'QAvatar',
+        'QInput'
       ],
 
       directives: [
