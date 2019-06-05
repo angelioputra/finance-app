@@ -5,24 +5,28 @@
       <div>
         <q-img
           class="profile-picture"
-          src="statics/img/login-2.png"
+          src="statics/img/login-3.png"
           spinner-color="white"
           style="max-width: 150px; margin-top: 5vh"
       />
       </div>
 
-      <div class="q-mt-lg text-h5">Registration</div>
+      <div class="q-mt-lg text-h5">Verification</div>
 
-      <div class="q-mt-lg q-px-xl text-grey text-body">Enter your mobile number, we will send you OTP to verify later</div>
+      <div class="q-mt-lg q-px-xl text-grey text-body">Enter 4 digit number that sent to +6208000123</div>
     </div>
 
     <div class="col q-mt-lg">
       <q-card flat class="my-card">
         <q-card-section>
-          <q-input outlined type="tel" />
+          <q-input outlined type="tel" prefix="(+62)" />
           <q-btn class="q-mt-md full-width" unelevated rounded no-caps color="primary" label="Continue" @click="handleChangePage" />
         </q-card-section>
       </q-card>
+    </div>
+
+    <div class="q-mt-lg text-primary">
+      Re-send code in <span class="text-weight-medium">0:30</span>
     </div>
   </q-page>
 </template>
@@ -31,7 +35,7 @@
 // import {  } from '../components'
 
 export default {
-  name: 'RegistrationStep1',
+  name: 'RegistrationStep2',
   components: {
 
   },
@@ -44,7 +48,7 @@ export default {
 
   methods: {
     handleChangePage () {
-      this.$router.push({ name: 'registration.step-2' })
+      this.$router.push({ name: 'registration.step-3' })
     }
   }
 }
