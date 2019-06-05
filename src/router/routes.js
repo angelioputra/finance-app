@@ -31,7 +31,7 @@ const routes = [
           showBurgerMenu: true,
           showNotification: true
         },
-        component: () => import('pages/MySaving.vue')
+        component: () => import('pages/SavingAccount.vue')
       }
     ]
   }

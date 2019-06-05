@@ -40,11 +40,11 @@
     <q-footer class="bg-white">
       <q-toolbar class="text-center">
           <div class="col">
-            <q-btn flat round color="primary" icon="fas fa-wallet" size="sm" :to="{name: 'home'}" />
+            <q-btn flat round :color="$route.name === 'home' ? 'primary' : 'grey'" icon="fas fa-wallet" size="sm" :to="{name: 'home'}" />
             <div class="text-primary text-caption">My Wallet</div>
           </div>
           <div class="col">
-            <q-btn flat round color="primary" icon="fas fa-heartbeat" size="sm" :to="{name: 'saving-account'}" />
+            <q-btn flat round :color="$route.name === 'saving-account' ? 'primary' : 'grey'" icon="fas fa-heartbeat" size="sm" :to="{name: 'saving-account'}" />
             <div class="text-primary text-caption">Insight</div>
           </div>
           <div class="col">

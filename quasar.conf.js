@@ -45,7 +45,13 @@ module.exports = function (ctx) {
         'QCarouselControl',
         'QCarouselSlide',
         'QLinearProgress',
-        'QChip'
+        'QChip',
+        'QCard',
+        'QCardSection',
+        'QCardActions',
+        'QSeparator',
+        'QCircularProgress',
+        'QAvatar'
       ],
 
       directives: [
